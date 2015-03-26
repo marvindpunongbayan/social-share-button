@@ -60,13 +60,16 @@ You need add require css,js file in your app assets files:
 ```
 
 Then you can use `social_share_button_tag` helper in views, for example `app/views/posts/show.html.erb`
-
 ```erb
 <%= social_share_button_tag(@post.title) %>
 ```
 
-Apart from the default title, you can specify the title for the special social network:
+And you can choose within 2 available sizes of images 16 for 16x16, 32 for 32x32 (default):
+```erb
+<%= social_share_button_tag(@post.title, :image_size => "16") %>
+```
 
+Apart from the default title, you can specify the title for the special social network:
 ```erb
 <%= social_share_button_tag(@post.title, 'data-twitter-title' => 'TheTitleForTwitter') %>
 ```
