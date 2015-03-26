@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   s.files        = Dir.glob("{bin,lib,app/assets/javascripts,app/assets/stylesheets}/**/*")
   s.files       += %w(README.md Changelogs.md)
-  s.files       += %w(app/assets/images/social-share-button/*)
   s.add_development_dependency "rails"
   s.add_runtime_dependency "coffee-rails"
   s.add_runtime_dependency "sass-rails"
