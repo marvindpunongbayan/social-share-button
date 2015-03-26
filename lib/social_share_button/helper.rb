@@ -3,6 +3,7 @@ module SocialShareButton
   module Helper
     def social_share_button_tag(title = "", opts = {})
       extra_data = {}
+      image_size = opts[:image_size] || "32"
       rel = opts[:rel]
       html = []
       html << "<div class='social-share-button' data-title='#{h title}' data-img='#{opts[:image]}'"
@@ -15,7 +16,7 @@ module SocialShareButton
         link_title = t "social_share_button.share_to", :name => t("social_share_button.#{name.downcase}")
         html << link_to("","#", {:rel => ["nofollow", rel],
                                   "data-site" => name,
-                                  :class => "social-share-button-#{name}",
+                                  :class => "social-share-button-#{name}-#{image_size}",
                                   :onclick => "return SocialShareButton.share(this);",
                                   :title => h(link_title)}.merge(extra_data).merge(special_data))
       end
