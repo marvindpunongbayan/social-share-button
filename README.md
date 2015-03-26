@@ -1,9 +1,11 @@
 # Social Share Button
-
 This is a gem to helper you quick create a share feature in you Rails apps.
 A social share feature with complete social networks
 
-# Sites list
+## Screenshot
+<img src="http://s24.postimg.org/p4p3kpojp/ZZZ_Small_Bite_Small_Bite_Test_Event_3_Vig.png"/>
+
+## Sites list
 * Facebook
 * Twitter
 * Google+
@@ -21,9 +23,6 @@ A social share feature with complete social networks
 * Delicious
 * Plurk
 * Email
-
-## Screenshot
-<img src="http://s24.postimg.org/p4p3kpojp/ZZZ_Small_Bite_Small_Bite_Test_Event_3_Vig.png"/>
 
 ## Install
 
