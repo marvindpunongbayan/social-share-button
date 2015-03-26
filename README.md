@@ -6,19 +6,20 @@ This is a gem to helper you quick create a share feature in you Rails apps.
 
 * Facebook
 * Twitter
-* Douban
 * Google+
+* Linkedin
+* Pinterest
+* Tumblr
+* Google Bookmark
+* Douban
 * Weibo
 * QZone
 * Tencent Weibo
 * Renren
 * Hi Baidu
 * Kaixin001
-* Google Bookmark
 * Delicious
-* Tumblr
 * Plurk
-* Pinterest
 * Email
 
 ## Screenshot
@@ -46,7 +47,7 @@ You can config `config/initializes/social_share_button.rb` to choose which site 
 
 ```ruby
 SocialShareButton.configure do |config|
-  config.allow_sites = %w(twitter facebook google_plus weibo douban tqq renren qq kaixin001 baidu tumblr plurk pinterest email)
+  config.allow_sites = %w(twitter facebook google_plus linkedin tumblr pinterest email)
 end
 ```
 
