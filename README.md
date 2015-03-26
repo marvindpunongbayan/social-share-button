@@ -1,9 +1,9 @@
 # Social Share Button
 
 This is a gem to helper you quick create a share feature in you Rails apps.
+A social share feature with complete social networks
 
 # Sites list
-
 * Facebook
 * Twitter
 * Google+
@@ -23,28 +23,23 @@ This is a gem to helper you quick create a share feature in you Rails apps.
 * Email
 
 ## Screenshot
-
-<img src="http://l.ruby-china.org/photo/85fa930a43d622ba9653eb0f86df207c.png" width="220px" />
+<img src="http://s24.postimg.org/p4p3kpojp/ZZZ_Small_Bite_Small_Bite_Test_Event_3_Vig.png"/>
 
 ## Install
 
 In your `Gemfile`:
-
 ```ruby
 gem 'social-share-button'
 ```
 
 And install it:
-
 ```bash
 $ bundle install
 $ rails generate social_share_button:install
 ```
 
 ## Configure
-
-You can config `config/initializes/social_share_button.rb` to choose which site do you want to use:
-
+You can config `config/initializes/social_share_button.rb` to choose which social sites you wanted to use:
 ```ruby
 SocialShareButton.configure do |config|
   config.allow_sites = %w(twitter facebook google_plus linkedin tumblr pinterest email)
@@ -52,9 +47,7 @@ end
 ```
 
 ## Usage
-
 You need add require css,js file in your app assets files:
-
 `app/assets/javascripts/application.coffee`
 
 ```
@@ -120,8 +113,3 @@ Here are the mapping of attributes depending on you data-type parameter
 | quote             | title     | data-quote                 |
 |                   |           | data-source                |
 </pre>
-
-
-## Demo
-
-[http://ruby-china.org/wiki/about](http://ruby-china.org/wiki/about)
