@@ -28,7 +28,7 @@ A social share feature with complete social networks
 
 In your `Gemfile`:
 ```ruby
-gem 'social-share-button'
+gem 'social-share-button', :git => "git@github.com:marvindpunongbayan/social-share-button.git"
 ```
 
 And install it:
