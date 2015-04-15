@@ -1,11 +1,11 @@
 # Social Share Button
-This is a gem to helper you quick create a share feature in you Rails apps.
-A social share feature with complete social networks
+This gem is a helper that you can able to create a share feature in your Rails app.
+A social sharing plugin with complete social networks
 
 ## Screenshot
 <img src="http://s24.postimg.org/p4p3kpojp/ZZZ_Small_Bite_Small_Bite_Test_Event_3_Vig.png"/>
 
-## Sites list
+## Available Social Network List
 * Facebook
 * Twitter
 * Google+
@@ -31,14 +31,14 @@ In your `Gemfile`:
 gem 'social-share-button', :git => "git@github.com:marvindpunongbayan/social-share-button.git"
 ```
 
-And install it:
+And generate it:
 ```bash
 $ bundle install
 $ rails generate social_share_button:install
 ```
 
 ## Configure
-You can config `config/initializes/social_share_button.rb` to choose which social sites you wanted to use:
+You can config `config/initializes/social_share_button.rb` to select which social sites you wanted to use:
 ```ruby
 SocialShareButton.configure do |config|
   config.allow_sites = %w(twitter facebook google_plus linkedin tumblr pinterest email)
