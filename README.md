@@ -31,14 +31,15 @@ In your `Gemfile`:
 gem 'social-share-button', :git => "git@github.com:marvindpunongbayan/social-share-button.git"
 ```
 
-## Update your Gem
-```bundle update --source social-share-button```
-
 And generate it:
 ```bash
 $ bundle install
 $ rails generate social_share_button:install
 ```
+
+## How to update (skip this when you haven't used this gem yet)
+```bundle update --source social-share-button```
+
 
 ## Configure
 You can config `config/initializes/social_share_button.rb` to select which social sites you wanted to use:
