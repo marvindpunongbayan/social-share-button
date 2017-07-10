@@ -13,18 +13,18 @@ window.SocialShareButton =
     $parent = $(el).parent()
     title = encodeURIComponent($(el).data(site + '-title') || $parent.data('title') || '')
     img = encodeURIComponent($parent.data("img") || '')
+    alert($(el).data(site + '-url'))
+    alert($parent.data(site + '-url'))
     if $(el).data(site + '-url') == "null"
       alert("yes")
       url = ""
     else
       alert("no")
-      url = encodeURIComponent($parent.data("url") || '')
+      url = encodeURIComponent($parent.data("url") || location.href)
     via = encodeURIComponent($parent.data("via") || '')
     desc = encodeURIComponent($parent.data("desc") || ' ')
     popup = encodeURIComponent($parent.data("popup") || 'false')
 
-    if url.length == 0
-      url = encodeURIComponent(location.href)
     switch site
       when "baidu"
         share_url = "http://hi.baidu.com/pub/show/share?url=#{url}&title=#{title}&content=#{desc}"
