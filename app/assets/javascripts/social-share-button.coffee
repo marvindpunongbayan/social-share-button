@@ -13,6 +13,7 @@ window.SocialShareButton =
     $parent = $(el).parent()
     title = encodeURIComponent($(el).data(site + '-title') || $parent.data('title') || '')
     img = encodeURIComponent($parent.data("img") || '')
+    alert($(el).data(site + '-url'))
     if $(el).data(site + '-url') == " "
       url = ""
     else
