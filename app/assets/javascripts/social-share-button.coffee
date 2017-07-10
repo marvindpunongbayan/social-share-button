@@ -15,7 +15,7 @@ window.SocialShareButton =
     img = encodeURIComponent($parent.data("img") || '')
     alert($(el).data(site + '-url'))
     alert($parent.data(site + '-url'))
-    if $(el).data(site + '-url') == "null"
+    if $(el).data(site + '-url') == "~blank~"
       alert("yes")
       url = ""
     else
