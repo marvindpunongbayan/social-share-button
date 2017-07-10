@@ -31,6 +31,9 @@ In your `Gemfile`:
 gem 'social-share-button', :git => "git@github.com:marvindpunongbayan/social-share-button.git"
 ```
 
+## Update your Gem
+```bundle update --source social-share-button```
+
 And generate it:
 ```bash
 $ bundle install
