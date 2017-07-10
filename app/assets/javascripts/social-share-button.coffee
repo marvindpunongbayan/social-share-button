@@ -13,13 +13,9 @@ window.SocialShareButton =
     $parent = $(el).parent()
     title = encodeURIComponent($(el).data(site + '-title') || $parent.data('title') || '')
     img = encodeURIComponent($parent.data("img") || '')
-    alert($(el).data(site + '-url'))
-    alert($parent.data(site + '-url'))
     if $(el).data(site + '-url') == "~blank~"
-      alert("yes")
       url = ""
     else
-      alert("no")
       url = encodeURIComponent($parent.data("url") || location.href)
     via = encodeURIComponent($parent.data("via") || '')
     desc = encodeURIComponent($parent.data("desc") || ' ')
