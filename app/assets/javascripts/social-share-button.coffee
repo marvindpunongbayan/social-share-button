@@ -24,6 +24,8 @@ window.SocialShareButton =
     desc = encodeURIComponent($parent.data("desc") || ' ')
     popup = encodeURIComponent($parent.data("popup") || 'false')
 
+    custom_content = encodeURIComponent($(el).data(site + '-content') || $parent.data('content') || '')
+
     switch site
       when "baidu"
         share_url = "http://hi.baidu.com/pub/show/share?url=#{url}&title=#{title}&content=#{desc}"
@@ -32,7 +34,7 @@ window.SocialShareButton =
       when "douban"
         share_url = "http://shuo.douban.com/!service/share?href=#{url}&name=#{title}&image=#{img}&sel=#{desc}"
       when "email"
-        share_url = "mailto:?to=&subject=#{title}&body=#{url}"
+        share_url = "mailto:?to=&subject=#{title}&body=#{custom_content}"
       when "facebook"
         share_url = "http://www.facebook.com/sharer.php?u=#{url}"
       when "google_bookmark"
