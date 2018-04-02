@@ -1,3 +1,7 @@
+== 0.2.1
+* Several adjustments to enhance the functionality
+* Cleaning the html single quote
+
 == 0.1.9
 
 * Add `data-via` to allow `{ via: "MyTwitter" }`
