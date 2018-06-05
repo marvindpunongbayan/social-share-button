@@ -1,4 +1,7 @@
-== 0.2.1
+== 1.2.2
+* Dynamic allow sites
+
+== 1.2.1
 * Several adjustments to enhance the functionality
 * Cleaning the html single quote
 
