@@ -1,3 +1,6 @@
+== 1.2.4
+* Remove url in background-image
+
 == 1.2.3
 * Changing image-path to image-url to ensure the complete url when getting the icons
 
