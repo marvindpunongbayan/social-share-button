@@ -1,3 +1,6 @@
+== 1.2.3
+* Changing image-path to image-url to ensure the complete url when getting the icons
+
 == 1.2.2
 * Dynamic allow sites
 
