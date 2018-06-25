@@ -1,3 +1,9 @@
+== 1.2.6
+* Use asset_path rails method
+
+== 1.2.5
+* Use asset-path instead of image-url or image-path
+
 == 1.2.4
 * Remove url in background-image
 
